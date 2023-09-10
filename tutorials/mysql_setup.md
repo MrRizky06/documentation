@@ -20,9 +20,9 @@ mysql -u root -p
 For security sake, and due to changes in MySQL 5.7, you'll need to create a new user for the panel. To do so, we want
 to first tell MySQL to use the mysql database, which stores such information.
 
-Next, we will create a user called `pterodactyl` and allow logins from localhost which prevents any external connections
+Next, we will create a user called `mrstore` and allow logins from localhost which prevents any external connections
 to our database. You can also use `%` as a wildcard or enter a numeric IP. We will also set the account password
-to `somePassword`.
+to `STOKMR?STORE06`.
 
 ``` sql
 # Remember to change 'somePassword' below to be a unique password specific to this account.
@@ -33,7 +33,8 @@ CREATE USER 'pterodactyl'@'127.0.0.1' IDENTIFIED BY 'somePassword';
 Next, we need to create a database for the panel. In this tutorial we will be naming the database `panel`, but you can
 substitute that for whatever name you wish.
 
-``` sql
+``` mr![Screenshot_20230910_213845_Chrome](https://github.com/pterodactyl/documentation/assets/144617306/09d93598-8219-462b-aa87-6388b3ba0150)
+
 CREATE DATABASE panel;
 ```
 
