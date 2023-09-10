@@ -20,13 +20,13 @@ mysql -u root -p
 For security sake, and due to changes in MySQL 5.7, you'll need to create a new user for the panel. To do so, we want
 to first tell MySQL to use the mysql database, which stores such information.
 
-Next, we will create a user called `pterodactyl` and allow logins from localhost which prevents any external connections
+Next, we will create a user called `caca` and allow logins from localhost which prevents any external connections
 to our database. You can also use `%` as a wildcard or enter a numeric IP. We will also set the account password
-to `somePassword`.
+to `caca123`.
 
 ``` sql
-# Remember to change 'somePassword' below to be a unique password specific to this account.
-CREATE USER 'pterodactyl'@'127.0.0.1' IDENTIFIED BY 'somePassword';
+# Remember to change 'caca123' below to be a unique password specific to this account.
+CREATE USER 'pterodactyl'@'127.0.0.1' IDENTIFIED BY 'caca123';
 ```
 
 ### Create a database
@@ -55,7 +55,7 @@ If your database is on a different host than the one where your Panel or Daemon 
 
 ```sql
 # You should change the username and password below to something unique.
-CREATE USER 'pterodactyluser'@'127.0.0.1' IDENTIFIED BY 'somepassword';
+CREATE USER 'caca'@'127.0.0.1' IDENTIFIED BY 'caca123';
 ```
 
 ### Assigning permissions
